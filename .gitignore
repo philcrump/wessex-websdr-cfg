@@ -1,0 +1,7 @@
+*~
+*.swp
+websdr64
+fftw-wisdom.dat
+userslog.txt
+log-cpuload.txt
+log/

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script>
+      window.location.replace("https://vhf-goonhilly.batc.org.uk/");
+    </script>
+  </head>
+  <body>
+    You are being redirected to the VHF Goonhilly WebSDR, please follow this link: <a href="https://vhf-goonhilly.batc.org.uk/">https://vhf-goonhilly.batc.org.uk/</a>
+  </body>
+</html>

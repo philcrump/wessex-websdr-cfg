@@ -1,0 +1,26 @@
+[Unit]
+Description=WebSDR Server
+Requires=websdr-rtltcp_1201.service
+Requires=websdr-rtltcp_1202.service
+Requires=websdr-rtltcp_1203.service
+Requires=websdr-rtltcp_1204.service
+Requires=websdr-rtltcp_1205.service
+Requires=websdr-rtltcp_1206.service
+After=syslog.target
+After=websdr-rtltcp_1201.service
+After=websdr-rtltcp_1202.service
+After=websdr-rtltcp_1203.service
+After=websdr-rtltcp_1204.service
+After=websdr-rtltcp_1205.service
+After=websdr-rtltcp_1206.service
+
+[Service]
+Type=simple
+User=websdr
+ExecStart=/usr/bin/stdbuf -oL -eL {{directory}}/websdr64
+WorkingDirectory={{directory}}
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

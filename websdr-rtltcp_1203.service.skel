@@ -1,0 +1,15 @@
+[Unit]
+Description=WebSDR RTL-SDR
+After=syslog.target
+
+[Service]
+Type=simple
+User=websdr
+ExecStart=/usr/bin/stdbuf -oL -eL {{directory}}/rtltcp_1203.sh
+WorkingDirectory={{directory}}
+Restart=always
+RestartSec=3
+StopWhenUnneeded=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+<!-- TODO: put a nice title in the next line -->
+<title>WebSDR on ??? in ???</title>
+
+	<script>
+		function getUrlVars()
+{
+  var vars = [], hash;
+  if(window.location.href.indexOf('?')>1)
+  {
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+      hash = hashes[i].split('=');
+      vars.push(hash[0]);
+      vars[hash[0]] = hash[1];
+    }
+  }
+  return vars
+}
+var urlVars = getUrlVars();
+if(typeof urlVars['noredirect']=='undefined' || urlVars['noredirect']!='true')
+{
+	//window.location.href = "https://vhf-goonhilly.batc.org.uk";
+}
+</script>
+<!--#include file="websdr-head.html"-->
+</head>
+
+<body onload=bodyonload()>
+
+<!-- TODO: put something nice here that explains what this page is, where your receiver is, your contact information, etc. -->
+<!-- Please include some reference to the websdr.org side, so users of your radio can find out more about the system. -->
+This is a WebSDR receiver, located in ........
+It is operated by ......., e-mail .....@........
+More information about the WebSDR project can be found on <a href="http://www.websdr.org">http://www.websdr.org</a>.
+<p>
+<b>Note:</b> you need both <i>Java</i> and <i>JavaScript</i> enabled for this
+page to work properly. If you don't hear anything, probably Java 
+is disabled or its version is too old (i.e., pre-1.4.2).
+<hr>
+
+
+<!--#include file="websdr-controls.html"-->
+
+</body>
+</html>
+
