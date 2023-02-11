@@ -5,3 +5,5 @@ fftw-wisdom.dat
 userslog.txt
 log-cpuload.txt
 log/
+pub/logbook.txt
+pub2/tmp/
