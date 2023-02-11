@@ -23,11 +23,11 @@ sudo systemctl restart websdr`
 
 ### Dell Optiplex 3070 Hardware
  * Hold F2 on startup to enter BIOS configuration
- ** Ensure that 'System Configuration' -> 'SATA Operation' is set to "AHCI" 
- ** Ensure that 'Power Management' -> 'On AC Recovery' is set to "Power On"
- ** Exit, applying settings.
+   * Ensure that 'System Configuration' -> 'SATA Operation' is set to "AHCI" 
+   * Ensure that 'Power Management' -> 'On AC Recovery' is set to "Power On"
+   * Exit, applying settings.
  * Hold F12 on reboot to enter boot menu
- ** Select `UEFI: <USB Disk name>` to boot from Ubuntu install disk
+   * Select `UEFI: <USB Disk name>` to boot from Ubuntu install disk
 
 
 ### Ubuntu Server 22.04 Installer
@@ -38,9 +38,9 @@ sudo systemctl restart websdr`
  * (Use default network settings)
  * Storage: Use Entire Disk
  * Profile
- ** Your Name / Username: "websdr"
- ** Hostname: "optiplex3070-websdr"
- ** Password: "\<choose a password\>"
+   * Your Name / Username: "websdr"
+   * Hostname: "optiplex3070-websdr"
+   * Password: "\<choose a password\>"
  * SSH Setup: Tick 'Install OpenSSH Server'
  * Server Snaps: (none applicable)
  * (Install now runs)
@@ -54,7 +54,7 @@ sudo apt install git htop curl wget build-essential cmake pkg-config vim
 sudo reboot
 ```
 
-### Custom FFTW3 (AVX2)
+### Custom FFTW3 (with AVX2 support)
 ```bash
 wget 'https://www.fftw.org/fftw-3.3.10.tar.gz'
 tar -xzf fftw-3.3.10.tar.gz 
